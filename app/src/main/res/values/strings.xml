@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Inz</string>
+    <string name="correct">CORRECT</string>
+    <string name="wrong">WRONG</string>
 </resources>

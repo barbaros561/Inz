@@ -1,11 +1,10 @@
-package com.example.inz
+package com.example.inz.k1Questions
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
-import androidx.core.view.isInvisible
-import androidx.core.view.isVisible
+import com.example.inz.R
 import kotlinx.android.synthetic.main.activity_k1_1.*
 
 class k1_1 : AppCompatActivity() {
@@ -16,12 +15,27 @@ class k1_1 : AppCompatActivity() {
         tvK1_1Answer.visibility = View.GONE
         tvK1_1Correct.visibility=View.GONE
         tvK1_1Wrong.visibility=View.GONE
-        ivK1_1Tablica.visibility=View.GONE
+        secondK1_1Layout.visibility=View.GONE
 
-        btnK1_1A.setOnClickListener {
+        btnK1_1A.setOnClickListener {  //poprawna odpowiedz
+            tvK1_1Wrong.visibility = View.GONE
             tvK1_1Answer.visibility = View.VISIBLE
             tvK1_1Correct.visibility = View.VISIBLE
-            ivK1_1Tablica.visibility = View.VISIBLE
+
+            btnK1_1A.setEnabled(false)
+            btnK1_1B.setEnabled(false)
+            btnK1_1C.setEnabled(false)
+            btnK1_1D.setEnabled(false)
+
+            secondK1_1Layout.visibility =View.VISIBLE
+
+            secondK1_1Layout.setOnClickListener {
+                finish()
+            }
+            btnK1_1Confirm.setOnClickListener {
+                finish()
+            }
+
         }
         btnK1_1B.setOnClickListener {
             tvK1_1Wrong.visibility=View.VISIBLE
