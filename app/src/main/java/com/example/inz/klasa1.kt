@@ -60,6 +60,37 @@ class klasa1 : AppCompatActivity() {
             val k1_12Intent = Intent(this, k1_12::class.java)
             startActivity(k1_12Intent)
         }
-
+        btnK1_13.setOnClickListener {
+            val k1_13Intent = Intent(this, k1_13::class.java)
+            startActivity(k1_13Intent)
+        }
+        btnK1_14.setOnClickListener {
+            val k1_14Intent = Intent(this, k1_14::class.java)
+            startActivity(k1_14Intent)
+        }
+        btnK1_15.setOnClickListener {
+            val k1_15Intent = Intent(this, k1_15::class.java)
+            startActivity(k1_15Intent)
+        }
+        btnK1_16.setOnClickListener {
+            val k1_16Intent = Intent(this, k1_16::class.java)
+            startActivity(k1_16Intent)
+        }
+        btnK1_17.setOnClickListener {
+            val k1_17Intent = Intent(this, k1_17::class.java)
+            startActivity(k1_17Intent)
+        }
+        btnK1_18.setOnClickListener {
+            val k1_18Intent = Intent(this, k1_18::class.java)
+            startActivity(k1_18Intent)
+        }
+        btnK1_19.setOnClickListener {
+            val k1_19Intent = Intent(this, k1_19::class.java)
+            startActivity(k1_19Intent)
+        }
+        btnK1_20.setOnClickListener {
+            val k1_20Intent = Intent(this, k1_20::class.java)
+            startActivity(k1_20Intent)
+        }
     }
 }
