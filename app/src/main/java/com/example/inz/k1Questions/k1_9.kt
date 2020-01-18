@@ -18,7 +18,9 @@ class k1_9 : AppCompatActivity() {
         tvK1_9Wrong.visibility=View.GONE
         secondK1_9Layout.visibility=View.GONE
 
-        btnK1_9A.setOnClickListener {  //poprawna odpowiedz
+        btnK1_9B.setOnClickListener {  //poprawna odpowiedz
+            btnK1_9B.setBackgroundResource(R.drawable.correct_button)
+
             tvK1_9Wrong.visibility = View.GONE
             tvK1_9Answer.visibility = View.VISIBLE
             tvK1_9Correct.visibility = View.VISIBLE
@@ -38,13 +40,17 @@ class k1_9 : AppCompatActivity() {
             }
 
         }
-        btnK1_9B.setOnClickListener {
+        btnK1_9A.setOnClickListener {
+            btnK1_9A.setBackgroundResource(R.drawable.wrong_button)
+
             tvK1_9Wrong.visibility=View.VISIBLE
             Handler().postDelayed({
                 tvK1_9Wrong.visibility=View.GONE
             },3000)
         }
         btnK1_9C.setOnClickListener {
+            btnK1_9C.setBackgroundResource(R.drawable.wrong_button)
+
             tvK1_9Wrong.visibility=View.VISIBLE
             Handler().postDelayed({
                 tvK1_9Wrong.visibility=View.GONE
@@ -52,6 +58,7 @@ class k1_9 : AppCompatActivity() {
 
         }
         btnK1_9D.setOnClickListener {
+            btnK1_9D.setBackgroundResource(R.drawable.wrong_button)
             tvK1_9Wrong.visibility=View.VISIBLE
             Handler().postDelayed({
                 tvK1_9Wrong.visibility=View.GONE

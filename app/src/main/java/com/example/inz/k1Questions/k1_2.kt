@@ -13,15 +13,16 @@ class k1_2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_k1_2)
 
-        tvK1_2Answer.visibility = View.GONE
+
         tvK1_2Correct.visibility=View.GONE
         tvK1_2Wrong.visibility=View.GONE
         secondK1_2Layout.visibility=View.GONE
 
-        btnK1_2A.setOnClickListener {   //popranwa odpowiedz
+        btnK1_2B.setOnClickListener {   //popranwa odpowiedz
+            btnK1_2B.setBackgroundResource(R.drawable.correct_button)
             tvK1_2Wrong.visibility = View.GONE
-            tvK1_2Answer.visibility = View.VISIBLE
             tvK1_2Correct.visibility = View.VISIBLE
+            ivK1_2Question.visibility = View.GONE
 
             btnK1_2A.setEnabled(false)
             btnK1_2B.setEnabled(false)
@@ -38,13 +39,15 @@ class k1_2 : AppCompatActivity() {
             }
 
         }
-        btnK1_2B.setOnClickListener {
+        btnK1_2A.setOnClickListener {
+            btnK1_2A.setBackgroundResource(R.drawable.wrong_button)
             tvK1_2Wrong.visibility=View.VISIBLE
             Handler().postDelayed({
                 tvK1_2Wrong.visibility=View.GONE
             },3000)
         }
         btnK1_2C.setOnClickListener {
+            btnK1_2C.setBackgroundResource(R.drawable.wrong_button)
             tvK1_2Wrong.visibility=View.VISIBLE
             Handler().postDelayed({
                 tvK1_2Wrong.visibility=View.GONE
@@ -52,6 +55,7 @@ class k1_2 : AppCompatActivity() {
 
         }
         btnK1_2D.setOnClickListener {
+            btnK1_2D.setBackgroundResource(R.drawable.wrong_button)
             tvK1_2Wrong.visibility=View.VISIBLE
             Handler().postDelayed({
                 tvK1_2Wrong.visibility=View.GONE

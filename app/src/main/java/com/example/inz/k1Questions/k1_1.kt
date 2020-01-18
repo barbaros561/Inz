@@ -1,5 +1,6 @@
 package com.example.inz.k1Questions
 
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -18,6 +19,7 @@ class k1_1 : AppCompatActivity() {
         secondK1_1Layout.visibility=View.GONE
 
         btnK1_1A.setOnClickListener {  //poprawna odpowiedz
+            btnK1_1A.setBackgroundResource(R.drawable.correct_button)
             tvK1_1Wrong.visibility = View.GONE
             tvK1_1Answer.visibility = View.VISIBLE
             tvK1_1Correct.visibility = View.VISIBLE
@@ -38,12 +40,14 @@ class k1_1 : AppCompatActivity() {
 
         }
         btnK1_1B.setOnClickListener {
+            btnK1_1B.setBackgroundResource(R.drawable.wrong_button)
             tvK1_1Wrong.visibility=View.VISIBLE
             Handler().postDelayed({
                 tvK1_1Wrong.visibility=View.GONE
             },3000)
         }
         btnK1_1C.setOnClickListener {
+            btnK1_1C.setBackgroundResource(R.drawable.wrong_button)
             tvK1_1Wrong.visibility=View.VISIBLE
             Handler().postDelayed({
                 tvK1_1Wrong.visibility=View.GONE
@@ -51,6 +55,7 @@ class k1_1 : AppCompatActivity() {
 
         }
         btnK1_1D.setOnClickListener {
+            btnK1_1D.setBackgroundResource(R.drawable.wrong_button)
             tvK1_1Wrong.visibility=View.VISIBLE
             Handler().postDelayed({
                 tvK1_1Wrong.visibility=View.GONE

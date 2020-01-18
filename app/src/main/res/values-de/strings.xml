@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inz</string>
+    <string name="circle">KREIS</string>
+    <string name="rectangle">RECHTECK</string>
+    <string name="square">PLATZ</string>
+    <string name="triangle">DREIECK</string>
+    <string name="correct">RICHTIG</string>
+    <string name="shape">Was is das?</string>
+    <string name="wrong">FALSHE</string>
+    <string name="Clock">Wie spät ist es?</string>
+    <string name="welcome">Herzlich Willkommen</string>
+    <string name="tap">Tippen Sie, um fortzufahren</string>
+    <string name="styczen">Januar</string>
+    <string name="luty">Februar</string>
+    <string name="marzec">März</string>
+    <string name="april">April</string>
+    <string name="maj">Mai</string>
+    <string name="czerwiec">Juni</string>
+    <string name="lipiec">Juli</string>
+    <string name="sierpien">Sierpień</string>
+    <string name="wrzesien">September</string>
+    <string name="pazdziernik">October</string>
+    <string name="listopad">November</string>
+    <string name="grudzien">Dezember</string>
+    <string name="Month">Welcher Monat wird der nächste sein?</string>
+    <string name="poniedzialek">Montag</string>
+    <string name="wtorek">Dienstag</string>
+    <string name="sroda">Mittwoch</string>
+    <string name="czwartek">Donnerstag</string>
+    <string name="piatek">Freitag</string>
+    <string name="sobota">Samstag</string>
+    <string name="niedziela">Sonntag</string>
+    <string name="Day3">Was ist der dritte Tag einer Woche?</string>
+</resources>

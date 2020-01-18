@@ -2,4 +2,49 @@
     <string name="app_name">Inz</string>
     <string name="correct">CORRECT</string>
     <string name="wrong">WRONG</string>
+    <string name="shape">What shape is that?</string>
+    <string name="triangle">Triangle</string>
+    <string name="rectangle">Rectangle</string>
+    <string name="square">Square</string>
+    <string name="circle">Circle</string>
+    <string name="Clock">What time is it?</string>
+    <string name="time1" translatable="false">15:10</string>
+    <string name="time2" translatable="false">8:45</string>
+    <string name="time3" translatable="false">16:35</string>
+    <string name="time4" translatable="false">7:10</string>
+    <string name="question2" translatable="false">"7 + 9 = "</string>
+    <string name="answer2" translatable="false">7 + 9 = 16</string>
+    <string name="question1" translatable="false">"1 + 2 = "</string>
+    <string name="answer1" translatable="false">1 + 2 = 3</string>
+    <string name="question3" translatable="false">"9 - 3 = "</string>
+    <string name="answer3" translatable="false">9 - 3 = 6</string>
+    <string name="time5" translatable="false">17:15</string>
+    <string name="time6" translatable="false">22:55</string>
+    <string name="time7" translatable="false">4:00</string>
+    <string name="time8" translatable="false">18:05</string>
+    <string name="welcome">WELCOME</string>
+    <string name="tap">tap to continue</string>
+    <string name="styczen">january</string>
+    <string name="luty">february</string>
+    <string name="marzec">march</string>
+    <string name="april">april</string>
+    <string name="maj">may</string>
+    <string name="czerwiec">june</string>
+    <string name="lipiec">july</string>
+    <string name="sierpien">august</string>
+    <string name="wrzesien">september</string>
+    <string name="pazdziernik">october</string>
+    <string name="listopad">november</string>
+    <string name="grudzien">december</string>
+    <string name="Month">What month will be next?</string>
+    <string name="poniedzialek">monday</string>
+    <string name="wtorek">tuesday</string>
+    <string name="sroda">wensday</string>
+    <string name="czwartek">thursday</string>
+    <string name="piatek">friday</string>
+    <string name="sobota">saturday</string>
+    <string name="niedziela">sunday</string>
+    <string name="Day3">What is 3rd day of a week?</string>
+    <string name="question4" translatable="false">"3 + 2 = "</string>
+    <string name="answer4" translatable="false">3 + 2 = 5</string>
 </resources>

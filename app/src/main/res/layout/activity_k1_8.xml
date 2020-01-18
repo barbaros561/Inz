@@ -4,23 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".k1Questions.k1_8">
+
     <Button
         android:id="@+id/btnK1_8A"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
         android:layout_marginBottom="16dp"
-        android:text="Button"
+        android:background="@drawable/question_button"
+        android:text="@string/poniedzialek"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btnK1_8C"
-        app:layout_constraintEnd_toStartOf="@+id/btnK1_8B"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnK1_8D"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:text="Button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/question_button"
+        android:text="@string/sroda"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -28,77 +35,73 @@
         android:id="@+id/tvK1_8Question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="1 + 2 = "
+        android:layout_marginTop="80dp"
+        android:text="@string/Day3"
+        android:textAlignment="center"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvK1_8Answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="3"
-        android:textSize="36sp"
-        app:layout_constraintStart_toEndOf="@+id/tvK1_8Question"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btnK1_8C"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginEnd="8dp"
-        android:text="Button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/question_button"
+        android:text="@string/wtorek"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnK1_8D"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnK1_8B"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginBottom="16dp"
-        android:text="Button"
+        android:background="@drawable/question_button"
+        android:text="@string/czwartek"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btnK1_8D"
         app:layout_constraintEnd_toEndOf="parent" />
+
     <TextView
         android:id="@+id/tvK1_8Correct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="@string/correct"
         android:textColor="@color/colorCorrect"
         android:textSize="72sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvK1_8Wrong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="@string/wrong"
         android:textColor="@color/colorWrong"
         android:textSize="72sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/secondK1_8Layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:elevation="2dp"
-        android:id="@+id/secondK1_8Layout">
+        tools:visibility="gone">
 
         <ImageView
             android:id="@+id/ivK1_8Tablica"
@@ -119,6 +122,20 @@
             android:layout_marginStart="275dp"
             android:layout_marginTop="210dp"
             android:text="Button"
+            app:layout_constraintStart_toStartOf="@+id/ivK1_8Tablica"
+            app:layout_constraintTop_toTopOf="@+id/ivK1_8Tablica" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:fontFamily="@font/finger_paint"
+            android:text="@string/sroda"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivK1_8Tablica"
+            app:layout_constraintEnd_toEndOf="@+id/ivK1_8Tablica"
             app:layout_constraintStart_toStartOf="@+id/ivK1_8Tablica"
             app:layout_constraintTop_toTopOf="@+id/ivK1_8Tablica" />
     </androidx.constraintlayout.widget.ConstraintLayout>
