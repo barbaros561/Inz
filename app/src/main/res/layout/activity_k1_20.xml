@@ -4,25 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".k1Questions.k1_20">
 
 
     <Button
         android:id="@+id/btnK1_20A"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
         android:layout_marginBottom="16dp"
-        android:text="Button"
+        android:background="@drawable/question_button"
+        android:text="@string/triangle"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btnK1_20C"
-        app:layout_constraintEnd_toStartOf="@+id/btnK1_20B"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnK1_20D"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:text="Button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/question_button"
+        android:text="@string/rectangle"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -30,40 +36,36 @@
         android:id="@+id/tvK1_20Question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="1 + 2 = "
+        android:layout_marginTop="80dp"
+        android:text="@string/shape"
+        android:textAlignment="center"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvK1_20Answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="3"
-        android:textSize="36sp"
-        app:layout_constraintStart_toEndOf="@+id/tvK1_20Question"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btnK1_20C"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginEnd="8dp"
-        android:text="Button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/question_button"
+        android:text="@string/square"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnK1_20D"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnK1_20B"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginBottom="16dp"
-        android:text="Button"
+        android:background="@drawable/question_button"
+        android:text="@string/circle"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btnK1_20D"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -71,27 +73,35 @@
         android:id="@+id/tvK1_20Correct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="@string/correct"
         android:textColor="@color/colorCorrect"
         android:textSize="72sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvK1_20Wrong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="@string/wrong"
         android:textColor="@color/colorWrong"
         android:textSize="72sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivK1_20Question"
+        android:layout_width="275dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvK1_20Question"
+        app:srcCompat="@drawable/prostokat" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/secondK1_20Layout"
@@ -101,7 +111,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
 
         <ImageView
             android:id="@+id/ivK1_20Tablica"
@@ -124,5 +135,30 @@
             android:text="Button"
             app:layout_constraintStart_toStartOf="@+id/ivK1_20Tablica"
             app:layout_constraintTop_toTopOf="@+id/ivK1_20Tablica" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:elevation="2dp"
+            android:fontFamily="@font/finger_paint"
+            android:text="@string/rectangle"
+            android:textColor="@color/colorWhite"
+            android:textSize="42sp"
+            app:layout_constraintEnd_toEndOf="@+id/ivK1_20Tablica"
+            app:layout_constraintStart_toStartOf="@+id/ivK1_20Tablica"
+            app:layout_constraintTop_toTopOf="@+id/ivK1_20Tablica" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="198dp"
+            android:layout_height="150dp"
+            android:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/ivK1_20Tablica"
+            app:layout_constraintStart_toStartOf="@+id/ivK1_20Tablica"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:srcCompat="@drawable/prostokatb" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

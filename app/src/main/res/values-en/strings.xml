@@ -14,7 +14,7 @@
     <string name="styczen">"January "</string>
     <string name="luty">February</string>
     <string name="marzec">March</string>
-    <string name="april">April</string>
+    <string name="kwiecien">April</string>
     <string name="maj">May</string>
     <string name="czerwiec">June</string>
     <string name="lipiec">July</string>
@@ -32,4 +32,7 @@
     <string name="sobota">Saturday</string>
     <string name="niedziela">Sunday</string>
     <string name="Day3">What is third day of the week?</string>
+    <string name="Day6">What is sixth day of the week?</string>
+    <string name="Month9">Which month is the ninth?</string>
+    <string name="Day">Which day will be next?</string>
 </resources>

@@ -1,6 +1,5 @@
 package com.example.inz.k1Questions
 
-import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler

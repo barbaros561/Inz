@@ -14,11 +14,11 @@
     <string name="styczen">Styczeń</string>
     <string name="luty">Luty</string>
     <string name="marzec">Marzec</string>
-    <string name="april">Kwiecień</string>
+    <string name="kwiecien">Kwiecień</string>
     <string name="maj">Maj</string>
     <string name="czerwiec">Czerwiec</string>
     <string name="lipiec">Lipiec</string>
-    <string name="sierpien">August</string>
+    <string name="sierpien">Sierpień</string>
     <string name="wrzesien">Wrzesień</string>
     <string name="pazdziernik">Październik</string>
     <string name="listopad">Listopad</string>
@@ -32,4 +32,7 @@
     <string name="sobota">Sobota</string>
     <string name="niedziela">Niedziela</string>
     <string name="Day3">Jaki jest trzeci dzień tygodnia</string>
+    <string name="Day6">Jaki jest szósty dzień tygodnia?</string>
+    <string name="Month9">Jaki jest dziewiąty miesiąc?</string>
+    <string name="Day">Który dzień będzie następny?</string>
 </resources>
