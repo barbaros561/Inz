@@ -7,7 +7,7 @@
     <string name="rectangle">Rectangle</string>
     <string name="square">Square</string>
     <string name="circle">Circle</string>
-    <string name="Clock">What time is it?</string>
+    <string name="Clock">Która jest godzina</string>
     <string name="time1" translatable="false">15:10</string>
     <string name="time2" translatable="false">8:45</string>
     <string name="time3" translatable="false">16:35</string>
@@ -55,5 +55,5 @@
     <string name="question6" translatable="false">"6 - 5 = "</string>
     <string name="answer6" translatable="false">6 - 5 = 1</string>
     <string name="time10" translatable="false">14:35</string>
-    <string name="Day">Which day will be next?</string>
+    <string name="Day">Który dzień będzie nastepny?</string>
 </resources>
