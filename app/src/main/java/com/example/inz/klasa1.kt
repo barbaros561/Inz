@@ -3,7 +3,6 @@ package com.example.inz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.inz.k1Questions.*
 import kotlinx.android.synthetic.main.activity_klasa1.*
 
 class klasa1 : AppCompatActivity() {
@@ -23,6 +22,10 @@ class klasa1 : AppCompatActivity() {
         btnKlasa1Geometria.setOnClickListener {
             val k1_Geometria = Intent(this, geometriaK1::class.java)
             startActivity(k1_Geometria)
+        }
+        btnKlasa1Liczby.setOnClickListener {
+            val k1_Liczby = Intent(this, liczbyK1::class.java)
+            startActivity(k1_Liczby)
         }
 
     }

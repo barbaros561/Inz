@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfQuizK1">
+    tools:context=".liczbyK1">
 
     <Button
-        android:id="@+id/btnInfQuizk1btn4"
+        android:id="@+id/btnLiczbyk1btn4"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginEnd="15dp"
@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/btnInfQuizk1btn3"
+        android:id="@+id/btnLiczbyk1btn3"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="15dp"
@@ -29,18 +29,18 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnInfQuizk1btn2"
+        android:id="@+id/btnLiczbyk1btn2"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="16dp"
         android:text="Button"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnInfQuizk1btn4"
+        app:layout_constraintBottom_toTopOf="@+id/btnLiczbyk1btn4"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/tvInfQuizk1Question"
+        android:id="@+id/tvLiczbyk1Question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -50,21 +50,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfQuizk1Score" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLiczbyk1Score" />
 
     <Button
-        android:id="@+id/btnInfQuizk1btn1"
+        android:id="@+id/btnLiczbyk1btn1"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="15dp"
         android:layout_marginBottom="16dp"
         android:text="Button"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@id/btnInfQuizk1btn3"
+        app:layout_constraintBottom_toTopOf="@id/btnLiczbyk1btn3"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tvInfQuizk1Score"
+        android:id="@+id/tvLiczbyk1Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -75,49 +75,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/ivwiosna"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfQuizk1Score"
-        app:srcCompat="@drawable/wiosna" />
-
-    <ImageView
-        android:id="@+id/ivlato"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfQuizk1Score"
-        app:srcCompat="@drawable/lato" />
-
-    <ImageView
-        android:id="@+id/ivjesien"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfQuizk1Score"
-        app:srcCompat="@drawable/jesien" />
-
-    <ImageView
-        android:id="@+id/ivzima"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfQuizk1Score"
-        app:srcCompat="@drawable/zima" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

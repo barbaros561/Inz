@@ -28,32 +28,32 @@
             android:id="@+id/btnKlasa1Quiz"
             android:layout_width="250sp"
             android:layout_height="60sp"
-            android:layout_marginTop="60dp"
-            android:background="@drawable/quizBG"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/quiz_bd"
             android:text="Quiz"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvKlasa1k1" />
+            app:layout_constraintTop_toBottomOf="@+id/btnKlasa1Geometria" />
 
         <Button
             android:id="@+id/btnKlasa1Zegar"
             android:layout_width="250sp"
             android:layout_height="60sp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/zegaryBG"
+            android:background="@drawable/zegary_bg"
             android:text="Zegar"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnKlasa1Quiz" />
+            app:layout_constraintTop_toBottomOf="@+id/btnKlasa1Liczby" />
 
         <Button
             android:id="@+id/btnKlasa1Geometria"
             android:layout_width="250sp"
             android:layout_height="60sp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/geometriaBG"
+            android:background="@drawable/geometria_bd"
             android:text="Geometria"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -61,14 +61,15 @@
             app:layout_constraintTop_toBottomOf="@+id/btnKlasa1Zegar" />
 
         <Button
-            android:id="@+id/btnKlasa1Baza"
+            android:id="@+id/btnKlasa1Liczby"
             android:layout_width="250sp"
             android:layout_height="60sp"
-            android:layout_marginTop="30dp"
-            android:text="Baza"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/liczby_bg"
+            android:text="Liczby"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnKlasa1Geometria" />
+            app:layout_constraintTop_toBottomOf="@+id/tvKlasa1k1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

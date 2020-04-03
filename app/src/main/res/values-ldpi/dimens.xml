@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_liczby_Ques">32sp</dimen>
+    <dimen name="font_size_liczby_Ans">40sp</dimen>
+    <dimen name="font_size_dni_miesiace_Ans">10sp</dimen>
+    <dimen name="font_size_dni_miesiace_Qyes">14sp</dimen>
+</resources>
