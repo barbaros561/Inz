@@ -18,7 +18,7 @@
 
 
             <TextView
-                android:id="@+id/tvKlasa2Klasa2"
+                android:id="@+id/tvKlasa2k1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="120dp"
@@ -30,225 +30,52 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/btnK2_1"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="100dp"
-                android:text="1"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_2"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvKlasa2Klasa2" />
-
-            <Button
-                android:id="@+id/btnK2_2"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="100dp"
-                android:text="2"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_3"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_1"
-                app:layout_constraintTop_toBottomOf="@+id/tvKlasa2Klasa2" />
-
-            <Button
-                android:id="@+id/btnK2_3"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="100dp"
-                android:text="3"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_4"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_2"
-                app:layout_constraintTop_toBottomOf="@+id/tvKlasa2Klasa2" />
-
-            <Button
-                android:id="@+id/btnK2_4"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="100dp"
-                android:text="4"
+                android:id="@+id/btnKlasa2Quiz"
+                android:layout_width="250sp"
+                android:layout_height="60sp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/quiz_bd"
+                android:text="Quiz"
+                android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_3"
-                app:layout_constraintTop_toBottomOf="@+id/tvKlasa2Klasa2" />
-
-            <Button
-                android:id="@+id/btnK2_5"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="5"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_6"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_1" />
+                app:layout_constraintTop_toBottomOf="@+id/btnKlasa2Geometria" />
 
             <Button
-                android:id="@+id/btnK2_6"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="6"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_7"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_5"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_2" />
-
-            <Button
-                android:id="@+id/btnK2_7"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="7"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_8"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_6"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_3" />
-
-            <Button
-                android:id="@+id/btnK2_8"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="8"
+                android:id="@+id/btnKlasa2Zegar"
+                android:layout_width="250sp"
+                android:layout_height="60sp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/zegary_bg"
+                android:text="Zegar"
+                android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_7"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_4" />
-
-            <Button
-                android:id="@+id/btnK2_10"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="10"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_11"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_9"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_7" />
-
-            <Button
-                android:id="@+id/btnK2_12"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="12"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_11"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_8" />
-
-            <Button
-                android:id="@+id/btnK2_9"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="9"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_10"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_5" />
+                app:layout_constraintTop_toBottomOf="@+id/btnKlasa2Liczby" />
 
             <Button
-                android:id="@+id/btnK2_11"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="11"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_12"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_10"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_7" />
-
-            <Button
-                android:id="@+id/btnK2_13"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="13"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_14"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_9" />
-
-            <Button
-                android:id="@+id/btnK2_14"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="14"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_15"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_13"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_10" />
-
-            <Button
-                android:id="@+id/btnK2_15"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="15"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_16"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_14"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_11" />
-
-            <Button
-                android:id="@+id/btnK2_16"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="16"
+                android:id="@+id/btnKlasa2Geometria"
+                android:layout_width="250sp"
+                android:layout_height="60sp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/geometria_bd"
+                android:text="Geometria"
+                android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_15"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_12" />
-
-            <Button
-                android:id="@+id/btnK2_17"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="17"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_18"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_13" />
+                app:layout_constraintTop_toBottomOf="@+id/btnKlasa2Zegar" />
 
             <Button
-                android:id="@+id/btnK2_18"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="18"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_19"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_17"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_14" />
-
-            <Button
-                android:id="@+id/btnK2_19"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="19"
-                app:layout_constraintEnd_toStartOf="@+id/btnK2_20"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_18"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_15" />
-
-            <Button
-                android:id="@+id/btnK2_20"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="40dp"
-                android:text="20"
+                android:id="@+id/btnKlasa2Liczby"
+                android:layout_width="250sp"
+                android:layout_height="60sp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/liczby_bg"
+                android:text="Liczby"
+                android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnK2_19"
-                app:layout_constraintTop_toBottomOf="@+id/btnK2_16" />
-
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvKlasa2k1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
