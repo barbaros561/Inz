@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfQuizK2">
+    tools:context=".liczbyK3">
 
     <Button
-        android:id="@+id/btnInfQuizk2btn4"
+        android:id="@+id/btnLiczbyk3btn4"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginEnd="15dp"
@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/btnInfQuizk2btn3"
+        android:id="@+id/btnLiczbyk3btn3"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="15dp"
@@ -29,42 +29,42 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnInfQuizk2btn2"
+        android:id="@+id/btnLiczbyk3btn2"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="16dp"
         android:text="Button"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnInfQuizk2btn4"
+        app:layout_constraintBottom_toTopOf="@+id/btnLiczbyk3btn4"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/tvInfQuizk2Question"
+        android:id="@+id/tvLiczbyk3Question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="145dp"
-        android:gravity="center"
+        android:layout_marginTop="150dp"
         android:text="TextView"
         android:textSize="40sp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfQuizk2Score" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLiczbyk3Score" />
 
     <Button
-        android:id="@+id/btnInfQuizk2btn1"
+        android:id="@+id/btnLiczbyk3btn1"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="15dp"
         android:layout_marginBottom="16dp"
         android:text="Button"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@id/btnInfQuizk2btn3"
+        app:layout_constraintBottom_toTopOf="@id/btnLiczbyk3btn3"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tvInfQuizk2Score"
+        android:id="@+id/tvLiczbyk3Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -74,17 +74,5 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnInfQuizk2btn5"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="16dp"
-        android:text="Button"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnInfQuizk2btn4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

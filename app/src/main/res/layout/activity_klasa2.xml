@@ -18,7 +18,7 @@
 
 
             <TextView
-                android:id="@+id/tvKlasa2k1"
+                android:id="@+id/tvKlasa2k2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="120dp"
@@ -75,7 +75,7 @@
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvKlasa2k1" />
+                app:layout_constraintTop_toBottomOf="@+id/tvKlasa2k2" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>

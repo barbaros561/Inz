@@ -46,20 +46,13 @@ class InfQuizK2 : AppCompatActivity() {
     val poryroku = arrayListOf("wiosna", "lato", "jesień", "zima")
     val miary = arrayListOf("centymetr", "kilogram", "litr", "złot")
     val wartosci = arrayListOf("długość", "wagę", "pojemność", "pieniądze")
-    val liczbyporadkowe = arrayListOf(
-        "pierwszy",
-        "drugi",
-        "trzeci",
-        "czwarty",
-        "piąty",
-        "szósty",
-        "siódmy",
-        "ósmy",
-        "dziewąty",
-        "dziesiąty",
-        "jedenasty",
-        "dwunasty"
-    )
+    val liczbyporadkowe = mapOf(
+        1 to "Pierwszy", 2 to "Drugi", 3 to "Trzeci", 4 to "Czwarty", 5 to "Piąty", 6 to "Szósty", 7 to "Siódmy", 8 to "Ósmy",
+        9 to "Dziewąty", 10 to "Dziesiąty", 11 to "Jedenasty", 12 to "Dwunasty", 13 to "Trzynasty",14 to "Czternasty",
+        15 to "Piętnasy", 16 to "Szesnasty", 17 to "Siedemnasty", 18 to "Osiemnasty", 19 to "Dziewiętnasty", 20 to "Dwudziesty",
+        21 to "Dwudziesty pierwszy", 22 to "Dwudziesty drugi", 23 to "Dwudziesty trzeci", 24 to "Dwudziesty czwarty",
+        25 to "Dwudziesty piąty", 26 to "Dwudziesty szósty", 27 to "Dwudziesty siódmy", 28 to "Dwudziesty ósmy")
+
     val liczby = arrayListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12")
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -75,14 +68,14 @@ class InfQuizK2 : AppCompatActivity() {
         btnInfQuizk2btn3.setBackgroundResource(R.drawable.default_button)
         btnInfQuizk2btn4.setBackgroundResource(R.drawable.default_button)
         btnInfQuizk2btn5.setBackgroundResource(R.drawable.default_button)
-        //var typPytnia = (1..5).random()
-        val typPytnia = 4
+        var typPytnia = (1..5).random()
+       // val typPytnia = 1
         when (typPytnia) {
             1 -> liczby()
             2 -> liczbyRzymskie()
             3 -> miesiace()
             4 -> daty()
-            // 5 -> miary()
+            5 -> porownywanie()
         }
     }
 
@@ -99,23 +92,24 @@ class InfQuizK2 : AppCompatActivity() {
         var rnd2: Int
         var answ: Int
         var dzialanie = (1..4).random()
+        //var dzialanie = 4
         if (dzialanie == 1) {
-            rnd1 = (0..10).random()
-            rnd2 = (0..10).random()
-            while (rnd1 + rnd2 > 10) {
-                rnd1 = (0..10).random()
-                rnd2 = (0..10).random()
+            rnd1 = (0..100).random()
+            rnd2 = (0..100).random()
+            while (rnd1 + rnd2 > 100) {
+                rnd1 = (0..100).random()
+                rnd2 = (0..100).random()
             }
             answ = rnd1 + rnd2
             var Odp = (1..4).random()
             tvInfQuizk2Question.setText(" " + rnd1.toString() + " + " + rnd2.toString() + " = ")
             sortliczby(Odp, answ)
         } else if (dzialanie == 2) {
-            rnd1 = (0..10).random()
-            rnd2 = (0..10).random()
+            rnd1 = (0..100).random()
+            rnd2 = (0..100).random()
             while (rnd1 - rnd2 < 0) {
-                rnd1 = (0..10).random()
-                rnd2 = (0..10).random()
+                rnd1 = (0..100).random()
+                rnd2 = (0..100).random()
             }
             answ = rnd1 - rnd2
             var Odp = (1..4).random()
@@ -135,9 +129,9 @@ class InfQuizK2 : AppCompatActivity() {
         } else {
             rnd1 = (0..30).random()
             rnd2 = (1..10).random()
-            while (rnd1 / rnd2 !in (0..30)) {
+            while (rnd1%rnd2 != 0) {
                 rnd1 = (0..30).random()
-                rnd2 = (1..10).random()
+                rnd2 = (1..15).random()
             }
             answ = rnd1 / rnd2
             var Odp = (1..4).random()
@@ -394,170 +388,80 @@ class InfQuizK2 : AppCompatActivity() {
         }
 
     }
-    fun daty(){
+    fun daty() {
         tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk2btn5.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
+        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_size_super_small)
+        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_size_super_small)
+        btnInfQuizk2btn5.textSize = resources.getDimension(R.dimen.font_size_super_small)
         btnInfQuizk2btn1.visibility = View.GONE
         btnInfQuizk2btn2.visibility = View.GONE
         btnInfQuizk2btn5.visibility = View.VISIBLE
         var miech = (1..12).random()
-        var dzien = (1..29).random()
-        var typ = 1
-        //var typ = (1..2).random()
+        var dzien = (1..28).random()
+        var typ = (1..2).random()
         var AnsNr = (3..5).random()
         if (typ == 1) { // rzym
-            tvInfQuizk2Question.setText("Jaka to data " + rzymMap[miech] + " " + dzien.toString() +"?")
+            tvInfQuizk2Question.setText("Jaka to data " + rzymMap[miech] + "." + dzien.toString() + "?")
             if (AnsNr == 3) {
-                btnInfQuizk2btn3.setText(dzien.toString() + " " + miesiace[miech])
-                btnInfQuizk2btn4.setText(dzien.toString() + " " + miesiace[miech+1])
-                btnInfQuizk2btn5.setText(dzien.toString() + " " + miesiace[miech-1])
+                btnInfQuizk2btn3.setText(liczbyporadkowe[dzien] + " " + miesiace[miech])
+                btnInfQuizk2btn4.setText(liczbyporadkowe[dzien] + " " + miesiace[miech + 1])
+                btnInfQuizk2btn5.setText(liczbyporadkowe[dzien] + " " + miesiace[miech - 1])
                 listner(AnsNr)
-            }else if (AnsNr == 4) {
-                btnInfQuizk2btn3.setText(dzien.toString() + " " + miesiace[miech-1])
-                btnInfQuizk2btn4.setText(dzien.toString() + " " + miesiace[miech])
-                btnInfQuizk2btn5.setText(dzien.toString() + " " + miesiace[miech+1])
+            } else if (AnsNr == 4) {
+                btnInfQuizk2btn3.setText(liczbyporadkowe[dzien] + " " + miesiace[miech - 1])
+                btnInfQuizk2btn4.setText(liczbyporadkowe[dzien] + " " + miesiace[miech])
+                btnInfQuizk2btn5.setText(liczbyporadkowe[dzien] + " " + miesiace[miech + 1])
                 listner(AnsNr)
-            }else {
-                btnInfQuizk2btn3.setText(dzien.toString() + " " + miesiace[miech+1])
-                btnInfQuizk2btn4.setText(dzien.toString() + " " + miesiace[miech-1])
-                btnInfQuizk2btn5.setText(dzien.toString() + " " + miesiace[miech])
+            } else {
+                btnInfQuizk2btn3.setText(liczbyporadkowe[dzien] + " " + miesiace[miech + 1])
+                btnInfQuizk2btn4.setText(liczbyporadkowe[dzien] + " " + miesiace[miech - 1])
+                btnInfQuizk2btn5.setText(liczbyporadkowe[dzien] + " " + miesiace[miech])
                 listner(AnsNr)
             }
-
 
         } else { //arabic
-
-        }
-
-
-    }
-       /*
-    fun miary() {
-        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        var miara = (1..4).random()
-        var typ = (1..2).random()
-        var AnsNr = (1..4).random()
-        var tmp: Int
-        if (typ == 1) {  // jaka miara
-            tmp = miara - 1
-            tvInfQuizk1Question.setText("Do liczenia czego używamy " +miary[tmp] + "ów?")
-            if (AnsNr == 1) {
-                btnInfQuizk1btn1.setText(wartosci[tmp])
-                btnInfQuizk1btn2.setText(wartosci[(tmp + 1) % 4])
-                btnInfQuizk1btn3.setText(wartosci[(tmp + 2) % 4])
-                btnInfQuizk1btn4.setText(wartosci[(tmp + 3) % 4])
+            tvInfQuizk2Question.setText("Jaka to data " + miech.toString() + "." + dzien.toString() + "?")
+            if (AnsNr == 3) {
+                btnInfQuizk2btn3.setText(liczbyporadkowe[dzien] + " " + miesiace[miech])
+                btnInfQuizk2btn4.setText(liczbyporadkowe[dzien] + " " + miesiace[miech + 1])
+                btnInfQuizk2btn5.setText(liczbyporadkowe[dzien] + " " + miesiace[miech - 1])
                 listner(AnsNr)
-            } else if (AnsNr == 2) {
-                var tmp2 = tmp - 1
-
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn1.setText(wartosci[tmp2])
-                btnInfQuizk1btn2.setText(wartosci[tmp])
-                btnInfQuizk1btn3.setText(wartosci[(tmp + 1) % 4])
-                btnInfQuizk1btn4.setText(wartosci[(tmp + 2) % 4])
+            } else if (AnsNr == 4) {
+                btnInfQuizk2btn3.setText(liczbyporadkowe[dzien] + " " + miesiace[miech - 1])
+                btnInfQuizk2btn4.setText(liczbyporadkowe[dzien] + " " + miesiace[miech])
+                btnInfQuizk2btn5.setText(liczbyporadkowe[dzien] + " " + miesiace[miech + 1])
                 listner(AnsNr)
-            } else if (AnsNr == 3) {
-                var tmp2 = tmp - 2
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn1.setText(wartosci[tmp2])
-                tmp2 = tmp - 1
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn2.setText(wartosci[tmp2])
-                btnInfQuizk1btn3.setText(wartosci[tmp])
-                btnInfQuizk1btn4.setText(wartosci[(tmp + 1) % 4])
-                listner(AnsNr)
-            } else if (AnsNr == 4){
-                var tmp2 = tmp - 3
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn1.setText(wartosci[tmp2])
-                tmp2 = tmp - 2
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn2.setText(wartosci[tmp2])
-                tmp2 = tmp - 1
-                if (tmp2 < 0) {
-                    tmp = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn3.setText(wartosci[tmp2])
-                btnInfQuizk1btn4.setText(wartosci[tmp])
-                listner(AnsNr)
-            }
-
-
-        } else {     // jaki dzień nastepny
-            tmp = miara - 1
-            tvInfQuizk1Question.setText("W czym mierzymy " + wartosci[tmp])
-            if (AnsNr == 1) {
-                btnInfQuizk1btn1.setText(miary[tmp])
-                btnInfQuizk1btn2.setText(miary[(tmp + 1) % 4])
-                btnInfQuizk1btn3.setText(miary[(tmp + 2) % 4])
-                btnInfQuizk1btn4.setText(miary[(tmp + 3) % 4])
-                listner(AnsNr)
-            } else if (AnsNr == 2) {
-                var tmp2 = tmp - 1
-
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn1.setText(miary[tmp2])
-                btnInfQuizk1btn2.setText(miary[tmp])
-                btnInfQuizk1btn3.setText(miary[(tmp + 1) % 4])
-                btnInfQuizk1btn4.setText(miary[(tmp + 2) % 4])
-                listner(AnsNr)
-            } else if (AnsNr == 3) {
-                var tmp2 = tmp - 2
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn1.setText(miary[tmp2])
-                tmp2 = tmp - 1
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn2.setText(miary[tmp2])
-                btnInfQuizk1btn3.setText(miary[tmp])
-                btnInfQuizk1btn4.setText(miary[(tmp + 1) % 4])
-                listner(AnsNr)
-            } else if (AnsNr == 4){
-                var tmp2 = tmp - 3
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn1.setText(miary[tmp2])
-                tmp2 = tmp - 2
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 4) % 4
-                }
-                btnInfQuizk1btn2.setText(miary[tmp2])
-                tmp2 = tmp - 1
-                if (tmp2 < 0) {
-                    tmp2 = (tmp2 + 12) % 12
-                }
-                btnInfQuizk1btn3.setText(miary[tmp2])
-                btnInfQuizk1btn4.setText(miary[tmp])
+            } else {
+                btnInfQuizk2btn3.setText(liczbyporadkowe[dzien] + " " + miesiace[miech + 1])
+                btnInfQuizk2btn4.setText(liczbyporadkowe[dzien] + " " + miesiace[miech - 1])
+                btnInfQuizk2btn5.setText(liczbyporadkowe[dzien] + " " + miesiace[miech])
                 listner(AnsNr)
             }
         }
 
 
     }
-    */
+    fun porownywanie(){
+        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_size_liczby_Ques)
+        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
+        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
+        btnInfQuizk2btn5.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
+        btnInfQuizk2btn1.visibility = View.GONE
+        btnInfQuizk2btn2.visibility = View.GONE
+        btnInfQuizk2btn5.visibility = View.VISIBLE
+        var liczba1 = (1..100).random()
+        var liczba2 = (1..100).random()
+        tvInfQuizk2Question.setText(liczba1.toString() + " ? " + liczba2.toString())
+        btnInfQuizk2btn5.setText("=")
+        btnInfQuizk2btn4.setText("<")
+        btnInfQuizk2btn3.setText(">")
+        if(liczba1 > liczba2){
+            listner(3)
+        } else if (liczba1 < liczba2){
+            listner(4)
+        } else {
+            listner(5)
+        }
 
-
-
+    }
 }
