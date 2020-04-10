@@ -19,5 +19,10 @@ class klasa3 : AppCompatActivity() {
             val k3_Quiz = Intent(this, InfQuizK3::class.java)
             startActivity(k3_Quiz)
         }
+        btnKlasa3Geometria.setOnClickListener {
+            val k3_Geometria = Intent(this, geometriaK3::class.java)
+            startActivity(k3_Geometria)
+        }
+
     }
 }

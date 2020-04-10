@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".geometria_k3_pytania">
+
+    <Button
+        android:id="@+id/btnGeoQuizk3btn4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Button"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnGeoQuizk3btn3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Button"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGeoQuizk3btn2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"
+        android:text="Button"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGeoQuizk3btn4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGeoQuizk3Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGeoQuizk3Score" />
+
+    <Button
+        android:id="@+id/btnGeoQuizk3btn1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="16dp"
+        android:text="Button"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@id/btnGeoQuizk3btn3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGeoQuizk3Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivGeoQuizk3trojkat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGeoQuizk3Score"
+        app:srcCompat="@drawable/trojkatwysokosc"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivGeoQuizk3kwadrat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGeoQuizk3Score"
+        app:srcCompat="@drawable/kwadrat"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivGeoQuizk3kolo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGeoQuizk3Score"
+        app:srcCompat="@drawable/kolopromien"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivGeoQuizk3prostokat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGeoQuizk3Score"
+        app:srcCompat="@drawable/prostokat"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvGeoQuizK3KwadratTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="130dp"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGeoQuizk3kwadrat"
+        app:layout_constraintEnd_toStartOf="@+id/ivGeoQuizk3kwadrat"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivGeoQuizk3kwadrat"
+        app:layout_constraintTop_toTopOf="@+id/ivGeoQuizk3kwadrat"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvGeoQuizK3KwadratRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:text="55"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivGeoQuizk3kwadrat"
+        app:layout_constraintStart_toStartOf="@+id/ivGeoQuizk3kwadrat"
+        app:layout_constraintTop_toBottomOf="@+id/ivGeoQuizk3kwadrat"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvGeoQuizK3ProstokatTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivGeoQuizk3prostokat"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivGeoQuizk3prostokat"
+        app:layout_constraintTop_toTopOf="@+id/ivGeoQuizk3prostokat"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvGeoQuizK3ProstokatRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:text="33"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivGeoQuizk3prostokat"
+        app:layout_constraintStart_toStartOf="@+id/ivGeoQuizk3prostokat"
+        app:layout_constraintTop_toBottomOf="@+id/ivGeoQuizk3prostokat"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvGeoQuizK3TrojkatWysokosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="62dp"
+        android:text="12"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/ivGeoQuizk3trojkat"
+        app:layout_constraintTop_toTopOf="@+id/ivGeoQuizk3trojkat"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvGeoQuizK3TrojkatPodstawa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="12"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGeoQuizk3trojkat"
+        app:layout_constraintEnd_toStartOf="@+id/ivGeoQuizk3trojkat"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivGeoQuizk3trojkat"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvGeoQuizK3KoloPromien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:text="12"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivGeoQuizk3kolo"
+        app:layout_constraintTop_toTopOf="@+id/ivGeoQuizk3kolo"
+        tools:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>
