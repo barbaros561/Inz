@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".geometria_k3_pytania"></activity>
+        <activity android:name=".zegarek_k1_nauka"></activity>
+        <activity android:name=".zegarek_k1_pytania" />
+        <activity android:name=".geometria_k3_pytania" />
         <activity android:name=".geometriaK3" />
         <activity android:name=".liczbyK3" />
         <activity android:name=".InfQuizK3" />

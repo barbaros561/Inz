@@ -28,6 +28,8 @@ class geometria_k3_pytania : AppCompatActivity() {
         tvGeoQuizK3ProstokatTop.visibility = View.GONE
         tvGeoQuizK3TrojkatPodstawa.visibility = View.GONE
         tvGeoQuizK3TrojkatWysokosc.visibility = View.GONE
+        tvGeoQuizK3TrojkatBok3.visibility=View.GONE
+        tvGeoQuizK3TrojkatBok2.visibility=View.GONE
         tvGeoQuizk3Score.setText("Poprawne odpowiedzi: " + correctAnswersOverall.toString() + "\nZłe odpowiedzi: " + badAnswersOverall.toString())
         losowanie()
     }
@@ -41,9 +43,9 @@ class geometria_k3_pytania : AppCompatActivity() {
         btnGeoQuizk3btn3.textSize=resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
         btnGeoQuizk3btn4.textSize=resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
         tvGeoQuizk3Question.textSize=resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        var figura = (1..4).random()
+        var figura = (1..1).random()
         var AnsNr = (1..4).random()
-        var typ = (1..2).random()
+        var typ = (1..1).random()
         //var typ = 1
         if (typ == 1) { //pole
             tvGeoQuizk3Question.setText("Oblicz " + wartosc[typ].toString() + " podanej figury")
@@ -53,62 +55,75 @@ class geometria_k3_pytania : AppCompatActivity() {
                 var r = (2..10).random()
                 tvGeoQuizK3KoloPromien.setText(r.toString())
                 var Odp = r * r
-                if (AnsNr == 1) {
-                    btnGeoQuizk3btn1.setText(Odp.toString() + pi + " cm\u00B2")
-                    btnGeoQuizk3btn2.setText((2*r).toString() + pi + " cm")
-                    btnGeoQuizk3btn3.setText(r.toString() + pi + " cm" )
-                    btnGeoQuizk3btn4.setText(((r*r)/2).toString() + pi + " cm\u00B2")
-                    listner(AnsNr)
-                } else if (AnsNr == 2){
-                    btnGeoQuizk3btn1.setText(r.toString() + pi  + " cm" )
-                    btnGeoQuizk3btn2.setText(Odp.toString() + pi + " cm\u00B2")
-                    btnGeoQuizk3btn3.setText(((r*r)/2).toString() + pi + " cm\u00B2")
-                    btnGeoQuizk3btn4.setText((2*r).toString() + pi + " cm")
-                    listner(AnsNr)
-                } else if (AnsNr==3){
-                    btnGeoQuizk3btn1.setText((2*r).toString() + pi + " cm")
-                    btnGeoQuizk3btn2.setText(((r*r)/2).toString() + pi + " cm\u00B2")
-                    btnGeoQuizk3btn3.setText(Odp.toString() + pi + " cm\u00B2")
-                    btnGeoQuizk3btn4.setText(r.toString() + pi  + " cm" )
-                    listner(AnsNr)
-                }else if (AnsNr==4){
-                    btnGeoQuizk3btn1.setText(((r*r)/2).toString() + pi + " cm\u00B2")
-                    btnGeoQuizk3btn2.setText(r.toString() + pi  + " cm" )
-                    btnGeoQuizk3btn3.setText((2*r).toString() + pi + " cm" )
-                    btnGeoQuizk3btn4.setText(Odp.toString() + pi + " cm\u00B2")
-                    listner(AnsNr)
+                when (AnsNr) {
+                 1  -> {
+                     btnGeoQuizk3btn1.setText(Odp.toString() + pi + " cm\u00B2")
+                     btnGeoQuizk3btn2.setText((2 * r).toString() + pi + " cm")
+                     btnGeoQuizk3btn3.setText(r.toString() + pi + " cm")
+                     btnGeoQuizk3btn4.setText(((r * r) / 2).toString() + pi + " cm\u00B2")
+                     listner(AnsNr)
+                 }
+                    2->{
+                        btnGeoQuizk3btn1.setText(r.toString() + pi  + " cm" )
+                        btnGeoQuizk3btn2.setText(Odp.toString() + pi + " cm\u00B2")
+                        btnGeoQuizk3btn3.setText(((r*r)/2).toString() + pi + " cm\u00B2")
+                        btnGeoQuizk3btn4.setText((2*r).toString() + pi + " cm")
+                        listner(AnsNr)
+                    }
+                    3-> {
+                        btnGeoQuizk3btn1.setText((2*r).toString() + pi + " cm")
+                        btnGeoQuizk3btn2.setText(((r*r)/2).toString() + pi + " cm\u00B2")
+                        btnGeoQuizk3btn3.setText(Odp.toString() + pi + " cm\u00B2")
+                        btnGeoQuizk3btn4.setText(r.toString() + pi  + " cm" )
+                        listner(AnsNr)
+
+                    }
+                    4->{
+                        btnGeoQuizk3btn1.setText(((r*r)/2).toString() + pi + " cm\u00B2")
+                        btnGeoQuizk3btn2.setText(r.toString() + pi  + " cm" )
+                        btnGeoQuizk3btn3.setText((2*r).toString() + pi + " cm" )
+                        btnGeoQuizk3btn4.setText(Odp.toString() + pi + " cm\u00B2")
+                        listner(AnsNr)
+                    }
                 }
             }else if (figura == 2){
                 ivGeoQuizk3trojkat.visibility=View.VISIBLE
                 tvGeoQuizK3TrojkatPodstawa.visibility=View.VISIBLE
                 tvGeoQuizK3TrojkatWysokosc.visibility=View.VISIBLE
+                tvGeoQuizK3TrojkatBok3.visibility=View.VISIBLE
+                tvGeoQuizK3TrojkatBok2.visibility=View.VISIBLE
                 var h = (1..10).random()
                 var x = (0..7).random()
                 var a = parzyste[x]
+                var b = (1..10).random()
+                var c = (1..10).random()
                 tvGeoQuizK3TrojkatPodstawa.setText(a.toString())
                 tvGeoQuizK3TrojkatWysokosc.setText(h.toString())
+                tvGeoQuizK3TrojkatBok2.setText(b.toString())
+                tvGeoQuizK3TrojkatBok3.setText(c.toString())
+                var Obw = (a+b+c)
                 var Odp = (a*h)/2
                 if (AnsNr==1){
                     btnGeoQuizk3btn1.setText(Odp.toString() + " cm\u00B2")
                     btnGeoQuizk3btn2.setText((a*h).toString() + " cm")
-                    btnGeoQuizk3btn3.setText((a+a+a).toString() + " cm")
+                    btnGeoQuizk3btn3.setText((Obw).toString() + " cm")
                     btnGeoQuizk3btn4.setText((a+h+h+a).toString() + " cm\u00B2")
                     listner(AnsNr)
                 }else if(AnsNr==2){
-                    btnGeoQuizk3btn1.setText((a+a+a).toString() + " cm")
+                    btnGeoQuizk3btn1.setText((Obw).toString() + " cm")
                     btnGeoQuizk3btn2.setText(Odp.toString() + " cm\u00B2")
-                    btnGeoQuizk3btn3.setText((a+a+a).toString() + " cm")
+                    btnGeoQuizk3btn3.setText((a*h).toString() + " cm")
                     btnGeoQuizk3btn4.setText((a+h+h+a).toString() + " cm\u00B2")
                     listner(AnsNr)
                 }else if(AnsNr==3) {
                     btnGeoQuizk3btn1.setText((a+h+h+a).toString() + " cm\u00B2")
                     btnGeoQuizk3btn2.setText((a*a).toString() + " cm")
                     btnGeoQuizk3btn3.setText(Odp.toString() + " cm\u00B2")
-                    btnGeoQuizk3btn4.setText((a+a+a).toString() + " cm")
+                    btnGeoQuizk3btn4.setText((Obw).toString() + " cm")
                     listner(AnsNr)
                 }else if (AnsNr==4){
                     btnGeoQuizk3btn1.setText((a*a).toString() + " cm")
-                    btnGeoQuizk3btn2.setText((a+a+a).toString() + " cm")
+                    btnGeoQuizk3btn2.setText((Obw).toString() + " cm")
                     btnGeoQuizk3btn3.setText((a+h+h+a).toString() + " cm\u00B2")
                     btnGeoQuizk3btn4.setText(Odp.toString() + " cm\u00B2")
                     listner(AnsNr)
@@ -150,8 +165,8 @@ class geometria_k3_pytania : AppCompatActivity() {
                 ivGeoQuizk3prostokat.visibility=View.VISIBLE
                 tvGeoQuizK3ProstokatRight.visibility=View.VISIBLE
                 tvGeoQuizK3ProstokatTop.visibility=View.VISIBLE
-                var a = (1..10).random()
-                var b = (1..10).random()
+                var a = (6..10).random()
+                var b = (1..5).random()
                 tvGeoQuizK3ProstokatTop.setText(a.toString())
                 tvGeoQuizK3ProstokatRight.setText(b.toString())
                 var Odp = a * b
@@ -218,35 +233,40 @@ class geometria_k3_pytania : AppCompatActivity() {
                 ivGeoQuizk3trojkat.visibility=View.VISIBLE
                 tvGeoQuizK3TrojkatPodstawa.visibility=View.VISIBLE
                 tvGeoQuizK3TrojkatWysokosc.visibility=View.VISIBLE
+                tvGeoQuizK3TrojkatBok2.visibility=View.VISIBLE
+                tvGeoQuizK3TrojkatBok3.visibility=View.VISIBLE
                 var h = (1..10).random()
                 var x = (0..7).random()
                 var a = parzyste[x]
+                var b = (1..10).random()
+                var c = (1..10).random()
                 tvGeoQuizK3TrojkatPodstawa.setText(a.toString())
                 tvGeoQuizK3TrojkatWysokosc.setText(h.toString())
-                var Odp = (a*h)/2
+                var Obw = (a+b+c)
+                var Odp = ((a*h)/2)
                 if (AnsNr==1){  // trójkąt do naprawy
-                    btnGeoQuizk3btn1.setText(Odp.toString() + " cm\u00B2")
+                    btnGeoQuizk3btn1.setText(Obw.toString() + " cm")
                     btnGeoQuizk3btn2.setText((a*h).toString() + " cm")
-                    btnGeoQuizk3btn3.setText((a+a+a).toString() + " cm")
+                    btnGeoQuizk3btn3.setText(Odp.toString() + " cm\u00B2")
                     btnGeoQuizk3btn4.setText((a+h+h+a).toString() + " cm\u00B2")
                     listner(AnsNr)
                 }else if(AnsNr==2){
-                    btnGeoQuizk3btn1.setText((a+a+a).toString() + " cm")
-                    btnGeoQuizk3btn2.setText(Odp.toString() + " cm\u00B2")
+                    btnGeoQuizk3btn1.setText(Odp.toString() + " cm\u00B2")
+                    btnGeoQuizk3btn2.setText(Obw.toString() + " cm")
                     btnGeoQuizk3btn3.setText((a+a+a).toString() + " cm")
                     btnGeoQuizk3btn4.setText((a+h+h+a).toString() + " cm\u00B2")
                     listner(AnsNr)
                 }else if(AnsNr==3) {
                     btnGeoQuizk3btn1.setText((a+h+h+a).toString() + " cm\u00B2")
                     btnGeoQuizk3btn2.setText((a*a).toString() + " cm")
-                    btnGeoQuizk3btn3.setText(Odp.toString() + " cm\u00B2")
-                    btnGeoQuizk3btn4.setText((a+a+a).toString() + " cm")
+                    btnGeoQuizk3btn3.setText(Obw.toString() + " cm")
+                    btnGeoQuizk3btn4.setText(Odp.toString() + " cm\u00B2")
                     listner(AnsNr)
                 }else if (AnsNr==4){
                     btnGeoQuizk3btn1.setText((a*a).toString() + " cm")
-                    btnGeoQuizk3btn2.setText((a+a+a).toString() + " cm")
-                    btnGeoQuizk3btn3.setText((a+h+h+a).toString() + " cm\u00B2")
-                    btnGeoQuizk3btn4.setText(Odp.toString() + " cm\u00B2")
+                    btnGeoQuizk3btn2.setText(Odp.toString() + " cm\u00B2")
+                    btnGeoQuizk3btn3.setText((a+h+h+a).toString() + " cm")
+                    btnGeoQuizk3btn4.setText(Obw.toString() + " cm\u00B2")
                     listner(AnsNr)
                 }
             }else if (figura == 3) {
@@ -286,8 +306,8 @@ class geometria_k3_pytania : AppCompatActivity() {
                 ivGeoQuizk3prostokat.visibility=View.VISIBLE
                 tvGeoQuizK3ProstokatRight.visibility=View.VISIBLE
                 tvGeoQuizK3ProstokatTop.visibility=View.VISIBLE
-                var a = (1..10).random()
-                var b = (1..10).random()
+                var a = (6..10).random()
+                var b = (1..5).random()
                 tvGeoQuizK3ProstokatTop.setText(a.toString())
                 tvGeoQuizK3ProstokatRight.setText(b.toString())
                 var Odp = a + a + b + b
@@ -336,6 +356,8 @@ class geometria_k3_pytania : AppCompatActivity() {
                 tvGeoQuizK3ProstokatTop.visibility = View.GONE
                 tvGeoQuizK3TrojkatPodstawa.visibility = View.GONE
                 tvGeoQuizK3TrojkatWysokosc.visibility = View.GONE
+                tvGeoQuizK3TrojkatBok3.visibility=View.GONE
+                tvGeoQuizK3TrojkatBok2.visibility=View.GONE
                 losowanie()
             }
             btnGeoQuizk3btn2.setOnClickListener {
@@ -377,6 +399,8 @@ class geometria_k3_pytania : AppCompatActivity() {
                 tvGeoQuizK3ProstokatTop.visibility = View.GONE
                 tvGeoQuizK3TrojkatPodstawa.visibility = View.GONE
                 tvGeoQuizK3TrojkatWysokosc.visibility = View.GONE
+                tvGeoQuizK3TrojkatBok3.visibility=View.GONE
+                tvGeoQuizK3TrojkatBok2.visibility=View.GONE
                 losowanie()
             }
             btnGeoQuizk3btn3.setOnClickListener {
@@ -418,6 +442,8 @@ class geometria_k3_pytania : AppCompatActivity() {
                 tvGeoQuizK3ProstokatTop.visibility = View.GONE
                 tvGeoQuizK3TrojkatPodstawa.visibility = View.GONE
                 tvGeoQuizK3TrojkatWysokosc.visibility = View.GONE
+                tvGeoQuizK3TrojkatBok3.visibility=View.GONE
+                tvGeoQuizK3TrojkatBok2.visibility=View.GONE
                 losowanie()
             }
             btnGeoQuizk3btn4.setOnClickListener {
@@ -459,6 +485,8 @@ class geometria_k3_pytania : AppCompatActivity() {
                 tvGeoQuizK3ProstokatTop.visibility = View.GONE
                 tvGeoQuizK3TrojkatPodstawa.visibility = View.GONE
                 tvGeoQuizK3TrojkatWysokosc.visibility = View.GONE
+                tvGeoQuizK3TrojkatBok3.visibility=View.GONE
+                tvGeoQuizK3TrojkatBok2.visibility=View.GONE
                 losowanie()
             }
         }

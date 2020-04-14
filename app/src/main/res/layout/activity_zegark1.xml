@@ -5,5 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Zegark1">
+    <Button
+        android:id="@+id/btnZegarPytaniak1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pytania"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnZegarNaukak1" />
 
+    <Button
+        android:id="@+id/btnZegarNaukak1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nauka"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnZegarPytaniak1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvZegark1" />
+
+    <TextView
+        android:id="@+id/tvZegark1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="ZEGAR"
+        android:textSize="52sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

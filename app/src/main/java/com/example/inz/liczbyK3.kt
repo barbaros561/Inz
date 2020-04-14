@@ -158,7 +158,7 @@ class liczbyK3 : AppCompatActivity() {
         if (Dzialanie == 1) {
             rnd1 = (0..1000).random()
             rnd2 = (0..1000).random()
-            while (rnd1 + rnd2 > 100) {
+            while (rnd1 + rnd2 > 1000) {
                 rnd1 = (0..1000).random()
                 rnd2 = (0..1000).random()
             }
