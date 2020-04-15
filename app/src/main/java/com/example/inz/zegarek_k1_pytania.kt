@@ -15,7 +15,7 @@ class zegarek_k1_pytania : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zegarek_k1_pytania)
-
+        tvZegarPytaniak1Question.setText("Która jest godzina?")
         tvZegarPytaniak1Score.setText("Poprawne odpowiedzi: " + correctAnswersOverall.toString() + "\nZłe odpowiedzi: " + badAnswersOverall.toString())
         losowanie()
     }

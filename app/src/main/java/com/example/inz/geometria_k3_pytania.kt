@@ -43,9 +43,9 @@ class geometria_k3_pytania : AppCompatActivity() {
         btnGeoQuizk3btn3.textSize=resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
         btnGeoQuizk3btn4.textSize=resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
         tvGeoQuizk3Question.textSize=resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        var figura = (1..1).random()
+        var figura = (1..4).random()
         var AnsNr = (1..4).random()
-        var typ = (1..1).random()
+        var typ = (1..2).random()
         //var typ = 1
         if (typ == 1) { //pole
             tvGeoQuizk3Question.setText("Oblicz " + wartosc[typ].toString() + " podanej figury")
@@ -56,13 +56,13 @@ class geometria_k3_pytania : AppCompatActivity() {
                 tvGeoQuizK3KoloPromien.setText(r.toString())
                 var Odp = r * r
                 when (AnsNr) {
-                 1  -> {
-                     btnGeoQuizk3btn1.setText(Odp.toString() + pi + " cm\u00B2")
-                     btnGeoQuizk3btn2.setText((2 * r).toString() + pi + " cm")
-                     btnGeoQuizk3btn3.setText(r.toString() + pi + " cm")
-                     btnGeoQuizk3btn4.setText(((r * r) / 2).toString() + pi + " cm\u00B2")
-                     listner(AnsNr)
-                 }
+                    1  -> {
+                        btnGeoQuizk3btn1.setText(Odp.toString() + pi + " cm\u00B2")
+                        btnGeoQuizk3btn2.setText((2 * r).toString() + pi + " cm")
+                        btnGeoQuizk3btn3.setText(r.toString() + pi + " cm")
+                        btnGeoQuizk3btn4.setText(((r * r) / 2).toString() + pi + " cm\u00B2")
+                        listner(AnsNr)
+                    }
                     2->{
                         btnGeoQuizk3btn1.setText(r.toString() + pi  + " cm" )
                         btnGeoQuizk3btn2.setText(Odp.toString() + pi + " cm\u00B2")
@@ -242,9 +242,11 @@ class geometria_k3_pytania : AppCompatActivity() {
                 var c = (1..10).random()
                 tvGeoQuizK3TrojkatPodstawa.setText(a.toString())
                 tvGeoQuizK3TrojkatWysokosc.setText(h.toString())
+                tvGeoQuizK3TrojkatBok3.setText(b.toString())
+                tvGeoQuizK3TrojkatBok2.setText(c.toString())
                 var Obw = (a+b+c)
                 var Odp = ((a*h)/2)
-                if (AnsNr==1){  // trójkąt do naprawy
+                if (AnsNr==1){
                     btnGeoQuizk3btn1.setText(Obw.toString() + " cm")
                     btnGeoQuizk3btn2.setText((a*h).toString() + " cm")
                     btnGeoQuizk3btn3.setText(Odp.toString() + " cm\u00B2")

@@ -20,6 +20,10 @@ class klasa2 : AppCompatActivity() {
             val k2_quiz = Intent(this, InfQuizK2::class.java)
             startActivity(k2_quiz)
         }
+        btnKlasa2Zegar.setOnClickListener {
+            val k2_zegar = Intent(this, Zegark2::class.java)
+            startActivity(k2_zegar)
+        }
 
     }
 }

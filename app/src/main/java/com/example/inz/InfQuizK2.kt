@@ -43,9 +43,6 @@ class InfQuizK2 : AppCompatActivity() {
     )
     val rzymMap = mapOf(0 to "XII", 1 to "I", 2 to "II", 3 to "III", 4 to "IV", 5 to "V", 6 to "VI", 7 to "VII", 8 to "VIII", 9 to "IX",
         10 to "X", 11 to "XI", 12 to "XII")
-    val poryroku = arrayListOf("wiosna", "lato", "jesień", "zima")
-    val miary = arrayListOf("centymetr", "kilogram", "litr", "złot")
-    val wartosci = arrayListOf("długość", "wagę", "pojemność", "pieniądze")
     val liczbyporadkowe = mapOf(
         1 to "Pierwszy", 2 to "Drugi", 3 to "Trzeci", 4 to "Czwarty", 5 to "Piąty", 6 to "Szósty", 7 to "Siódmy", 8 to "Ósmy",
         9 to "Dziewąty", 10 to "Dziesiąty", 11 to "Jedenasty", 12 to "Dwunasty", 13 to "Trzynasty",14 to "Czternasty",

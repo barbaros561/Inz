@@ -236,4 +236,280 @@
         app:layout_constraintTop_toTopOf="@+id/ivInfQuizk3Trojkat"
         tools:visibility="gone" />
 
+    <ImageView
+        android:id="@+id/ivInfQuizK3zegary_pusty"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivInfQuizk3Trojkat"
+        app:srcCompat="@drawable/zegar_pusty"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_jeden_siedem"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_dwa_osiem"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_trzy_dziewiec"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_cztery_dziesiec"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_piec_jedena"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_szesc_dwana"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_jeden_siedem"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="63dp"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_dwa_osiem"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_trzy_dziewiec"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_cztery_dziesiec"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_piec_jedena"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Godzina12"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="43dp"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/godzina_szesc_dwana"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_jeden_siedem"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_dwa_osiem"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta3"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="77dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_trzy_dziewiec"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_cztery_dziesiec"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta5"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintEnd_toEndOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_piac_jedena"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_szesc_dwana"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_jeden_siedem"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_dwa_osiem"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta9"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_trzy_dziewiec"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_cztery_dziesiec"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_piac_jedena"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivInfQuizK3Minuta12"
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="@+id/ivInfQuizK3zegary_pusty"
+        app:layout_constraintTop_toTopOf="@+id/ivInfQuizK3zegary_pusty"
+        app:srcCompat="@drawable/minuta_szesc_dwana"
+        tools:visibility="visible" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
