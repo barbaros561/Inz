@@ -12,11 +12,11 @@ class liczbyK2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_liczby_k2)
-        btnLiczbyk2btn1.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnLiczbyk2btn2.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnLiczbyk2btn3.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnLiczbyk2btn4.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        tvLiczbyk2Question.textSize = resources.getDimension(R.dimen.font_size_liczby_Ques)
+        btnLiczbyk2btn1.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnLiczbyk2btn2.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnLiczbyk2btn3.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnLiczbyk2btn4.textSize = resources.getDimension(R.dimen.font_40sp)
+        tvLiczbyk2Question.textSize = resources.getDimension(R.dimen.font_32sp)
 
         tvLiczbyk2Score.setText("Poprawne odpowiedzi: " + correctansoverall.toString() + "\n" + "Złe odpowiedzi: " + badansoverall.toString())
         picker()

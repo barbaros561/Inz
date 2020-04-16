@@ -23,11 +23,11 @@ class geometria_k1_pytania : AppCompatActivity() {
         btnGeoQuizk1btn3.setBackgroundResource(R.drawable.default_button)
         btnGeoQuizk1btn4.setBackgroundResource(R.drawable.default_button)
         tvGeoQuizk1Question.setText("Jaka to figura?")
-        tvGeoQuizk1Question.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        btnGeoQuizk1btn1.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnGeoQuizk1btn2.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnGeoQuizk1btn3.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnGeoQuizk1btn4.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
+        tvGeoQuizk1Question.textSize = resources.getDimension(R.dimen.font_14sp)
+        btnGeoQuizk1btn1.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnGeoQuizk1btn2.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnGeoQuizk1btn3.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnGeoQuizk1btn4.textSize = resources.getDimension(R.dimen.font_10sp)
         losowanie()
 
     }

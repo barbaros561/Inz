@@ -73,11 +73,11 @@ class InfQuizK1 : AppCompatActivity() {
     }
 
     fun liczby() {
-        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_size_liczby_Ques)
-        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
+        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_32sp)
+        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_40sp)
         var rnd1: Int
         var rnd2: Int
         var answ: Int
@@ -254,11 +254,11 @@ class InfQuizK1 : AppCompatActivity() {
     }
 
     fun dnitygodnia() {
-        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
+        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_14sp)
+        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_10sp)
         var dzien = (1..7).random()
         var typ = (1..2).random()
         var AnsNr = (1..4).random()
@@ -376,11 +376,11 @@ class InfQuizK1 : AppCompatActivity() {
     }
 
     fun miesiace() {
-        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
+        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_24sp)
+        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_10sp)
         var miesiac = (1..12).random()
         var typ = (1..2).random()
         var AnsNr = (1..4).random()
@@ -497,11 +497,11 @@ class InfQuizK1 : AppCompatActivity() {
     }
 
     fun poryroku() {
-        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
+        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_14sp)
+        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_10sp)
         var pora = (1..4).random()
         tvInfQuizk1Question.setText("Jaka to pora roku?")
         when (pora) {
@@ -567,11 +567,11 @@ class InfQuizK1 : AppCompatActivity() {
     }
 
     fun miary() {
-        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
+        tvInfQuizk1Question.textSize = resources.getDimension(R.dimen.font_14sp)
+        btnInfQuizk1btn1.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn2.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn3.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk1btn4.textSize = resources.getDimension(R.dimen.font_10sp)
         var miara = (1..4).random()
         var typ = (1..2).random()
         var AnsNr = (1..4).random()

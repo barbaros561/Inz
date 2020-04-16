@@ -77,11 +77,11 @@ class InfQuizK2 : AppCompatActivity() {
     }
 
     fun liczby() {
-        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_size_liczby_Ques)
-        btnInfQuizk2btn1.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk2btn2.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
+        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_32sp)
+        btnInfQuizk2btn1.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnInfQuizk2btn2.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_40sp)
         btnInfQuizk2btn5.visibility = View.GONE
         btnInfQuizk2btn1.visibility = View.VISIBLE
         btnInfQuizk2btn2.visibility = View.VISIBLE
@@ -309,11 +309,11 @@ class InfQuizK2 : AppCompatActivity() {
     }
 
     fun miesiace() {
-        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        btnInfQuizk2btn1.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk2btn2.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
-        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Ans)
+        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_14sp)
+        btnInfQuizk2btn1.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk2btn2.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_10sp)
         btnInfQuizk2btn1.visibility = View.GONE
         btnInfQuizk2btn2.visibility = View.GONE
         btnInfQuizk2btn5.visibility = View.GONE
@@ -347,11 +347,11 @@ class InfQuizK2 : AppCompatActivity() {
     }
 
     fun liczbyRzymskie(){
-        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        btnInfQuizk2btn1.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk2btn2.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
+        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_14sp)
+        btnInfQuizk2btn1.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk2btn2.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_10sp)
+        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_10sp)
         btnInfQuizk2btn1.visibility = View.VISIBLE
         btnInfQuizk2btn2.visibility = View.VISIBLE
         btnInfQuizk2btn5.visibility = View.GONE
@@ -386,10 +386,10 @@ class InfQuizK2 : AppCompatActivity() {
 
     }
     fun daty() {
-        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_size_dni_miesiace_Qyes)
-        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_size_super_small)
-        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_size_super_small)
-        btnInfQuizk2btn5.textSize = resources.getDimension(R.dimen.font_size_super_small)
+        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_14sp)
+        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_6sp)
+        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_6sp)
+        btnInfQuizk2btn5.textSize = resources.getDimension(R.dimen.font_6sp)
         btnInfQuizk2btn1.visibility = View.GONE
         btnInfQuizk2btn2.visibility = View.GONE
         btnInfQuizk2btn5.visibility = View.VISIBLE
@@ -439,10 +439,10 @@ class InfQuizK2 : AppCompatActivity() {
 
     }
     fun porownywanie(){
-        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_size_liczby_Ques)
-        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
-        btnInfQuizk2btn5.textSize = resources.getDimension(R.dimen.font_size_liczby_Ans)
+        tvInfQuizk2Question.textSize = resources.getDimension(R.dimen.font_32sp)
+        btnInfQuizk2btn3.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnInfQuizk2btn4.textSize = resources.getDimension(R.dimen.font_40sp)
+        btnInfQuizk2btn5.textSize = resources.getDimension(R.dimen.font_40sp)
         btnInfQuizk2btn1.visibility = View.GONE
         btnInfQuizk2btn2.visibility = View.GONE
         btnInfQuizk2btn5.visibility = View.VISIBLE

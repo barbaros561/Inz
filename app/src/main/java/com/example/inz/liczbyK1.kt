@@ -13,10 +13,6 @@ class liczbyK1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_liczby_k1)
         tvLiczbyk1Score.setText("Poprawne odpowiedzi: " + correctAnswersOverall.toString() + "\nZłe odpowiedzi: " + badAnswersOverall.toString())
-        btnLiczbyk1btn1.setBackgroundResource(R.drawable.default_button)
-        btnLiczbyk1btn2.setBackgroundResource(R.drawable.default_button)
-        btnLiczbyk1btn3.setBackgroundResource(R.drawable.default_button)
-        btnLiczbyk1btn4.setBackgroundResource(R.drawable.default_button)
         picker()
     }
     fun picker() {
